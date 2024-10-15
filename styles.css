@@ -1,0 +1,30 @@
+/* Hide elements with the hidden class */
+.hidden {
+    display: none; /* Elements with this class will not be displayed */
+}
+
+#app {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px; /* Set a maximum width for the app */
+}
+
+h1, h2 {
+    color: #333; /* Dark grey color for headings */
+}
+
+button {
+    background-color: #4CAF50; /* Green background color for buttons */
+    color: white; /* White text color for buttons */
+    border: none; /* No border for buttons */
+    padding: 10px 20px; /* Padding around button text */
+    text-align: center; /* Center align text within buttons */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Margin on top of buttons */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on button hover */
+}
