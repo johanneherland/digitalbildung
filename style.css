@@ -1,0 +1,85 @@
+#enterGame{
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styler alle lenker som vanlig sort tekst, som i eksempel på canvas */
+a {
+    text-decoration: none; /* fjerner understrek fra lenker */
+    color: black; /* endrer farge på lenker til svart */
+}
+
+/* Fjerner bullet points fra navigasjonsliste, flexbox ordner navigasjonsmeny horisontalt, 
+lager lik avstand mellom lenker */
+nav ul {
+    list-style: none; /* fjerner bullet points i liste */
+    display: flex; /* oppretter flex-container */
+    flex-direction: row; /* elementer i navigasjon legger seg i en horisontal rad fra venstre til høyre */
+    gap: 1rem; /* lik avstand mellom lenker */
+}
+
+#gridArea{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    height: 100vh;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex; /* oppretter flex-container */
+    flex-direction: column; /* ordner header (logo og navigasjon) vertikalt */
+    justify-content: center; /* sentrerer header horisontalt */
+    align-items: center; /* sentrerer header vertikalt */
+}
+
+main{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex; /* oppretter flex-container */
+    flex-direction: column; /* ordner header (logo og navigasjon) vertikalt */
+    justify-content: center; /* sentrerer header horisontalt */
+    align-items: center; /* sentrerer header vertikalt */
+}
+
+footer{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    display: flex; /* oppretter flex-container */
+    flex-direction: column; /* ordner header (logo og navigasjon) vertikalt */
+    justify-content: center; /* sentrerer header horisontalt */
+    align-items: center; /* sentrerer header vertikalt */
+}
+
+#cat1, #cat2, #cat3, #cat4{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cat1{
+    background-color: hsl(146, 52%, 72%);
+}
+
+#cat2{
+    background-color: hsl(248, 52%, 72%);
+}
+
+#cat3{
+    background-color: hsl(288, 52%, 72%);
+}
+
+#cat4{
+    background-color: hsl(102, 52%, 72%);
+}

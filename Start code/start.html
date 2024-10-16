@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Filter Bubble</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Introduction Section -->
+        <section id="intro">
+            <h1>Welcome to Your Filter Bubble</h1>
+            <p>Your online experience is shaped by the choices you make. What you follow, click, and engage with narrows your view of the digital world.</p>
+            <button id="startButton">Start Building Your Bubble</button>
+        </section>
+
+        <!-- Profile Setup Section -->
+        <section id="profileSetup" class="hidden">
+            <h2>Let’s Get Started!</h2>
+            <p>Tell us about your digital habits.</p>
+            <label for="newsSource">Select your primary news source:</label>
+            <select id="newsSource">
+                <option value="mainstream">Mainstream News (e.g., BBC, CNN)</option>
+                <option value="alternative">Alternative News</option>
+                <option value="social">Social Media News</option>
+            </select>
+            <label for="contentFilter">Do you use content filters on social media?</label>
+            <input type="checkbox" id="contentFilter">
+            <button id="profileSubmit">Submit</button>
+        </section>
+
+        <!-- Content Feed Section -->
+        <section id="contentFeed" class="hidden">
+            <h2>Your Content Feed</h2>
+            <p>Engage with the content below:</p>
+            <div id="contentButtons">
+                <button data-content="politics">Political Article</button>
+                <button data-content="entertainment">Entertainment News</button>
+                <button data-content="tech">Tech Update</button>
+                <button data-content="conspiracy">Conspiracy Theory</button>
+            </div>
+            <button id="continueButton" class="hidden">See Your Results</button>
+        </section>
+
+        <!-- Results Section -->
+        <section id="result" class="hidden">
+            <h2>Your Filter Bubble</h2>
+            <p id="bubbleDescription"></p>
+            <button id="restartButton">Restart</button>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
